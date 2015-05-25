@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{926D8CD1-2342-4826-BFAF-96D3FA1FA0A8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kütüphane</RootNamespace>
+    <AssemblyName>Kütüphane</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\İlhan Aydınlı\Desktop\dfsfsdfsd\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C636900033C6F4D6010C6C7C6FC84172ED51339B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Kütüphane_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="acilis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acilis.Designer.cs">
+      <DependentUpon>acilis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ayarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ayarlar.Designer.cs">
+      <DependentUpon>ayarlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cezalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cezalar.Designer.cs">
+      <DependentUpon>cezalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="giris.Designer.cs">
+      <DependentUpon>giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gizlisoru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gizlisoru.Designer.cs">
+      <DependentUpon>gizlisoru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kategoriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kategoriler.Designer.cs">
+      <DependentUpon>kategoriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kategori_duzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kategori_duzenle.Designer.cs">
+      <DependentUpon>kategori_duzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kategori_ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kategori_ekle.Designer.cs">
+      <DependentUpon>kategori_ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitaplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitaplar.Designer.cs">
+      <DependentUpon>kitaplar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitap_duzunle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitap_duzunle.Designer.cs">
+      <DependentUpon>kitap_duzunle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitap_ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitap_ekle.Designer.cs">
+      <DependentUpon>kitap_ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kutuphane_panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kutuphane_panel.Designer.cs">
+      <DependentUpon>kutuphane_panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="odunc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="odunc.Designer.cs">
+      <DependentUpon>odunc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="odunc_tarih.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="odunc_tarih.Designer.cs">
+      <DependentUpon>odunc_tarih.cs</DependentUpon>
+    </Compile>
+    <Compile Include="odunc_ver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="odunc_ver.Designer.cs">
+      <DependentUpon>odunc_ver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="sifremi_unuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sifremi_unuttum.Designer.cs">
+      <DependentUpon>sifremi_unuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sifre_degistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sifre_degistir.Designer.cs">
+      <DependentUpon>sifre_degistir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uyeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uyeler.Designer.cs">
+      <DependentUpon>uyeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uye_duzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uye_duzenle.Designer.cs">
+      <DependentUpon>uye_duzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uye_ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uye_ekle.Designer.cs">
+      <DependentUpon>uye_ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="veritabani.cs" />
+    <Compile Include="yayine_duzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yayine_duzenle.Designer.cs">
+      <DependentUpon>yayine_duzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yayine_ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yayine_ekle.Designer.cs">
+      <DependentUpon>yayine_ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yayin_e.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yayin_e.Designer.cs">
+      <DependentUpon>yayin_e.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yazarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yazarlar.Designer.cs">
+      <DependentUpon>yazarlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yazar_duzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yazar_duzenle.Designer.cs">
+      <DependentUpon>yazar_duzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yazar_ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yazar_ekle.Designer.cs">
+      <DependentUpon>yazar_ekle.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="acilis.resx">
+      <DependentUpon>acilis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ayarlar.resx">
+      <DependentUpon>ayarlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cezalar.resx">
+      <DependentUpon>cezalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="giris.resx">
+      <DependentUpon>giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gizlisoru.resx">
+      <DependentUpon>gizlisoru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kategoriler.resx">
+      <DependentUpon>kategoriler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kategori_duzenle.resx">
+      <DependentUpon>kategori_duzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kategori_ekle.resx">
+      <DependentUpon>kategori_ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitaplar.resx">
+      <DependentUpon>kitaplar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitap_duzunle.resx">
+      <DependentUpon>kitap_duzunle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitap_ekle.resx">
+      <DependentUpon>kitap_ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kutuphane_panel.resx">
+      <DependentUpon>kutuphane_panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="odunc.resx">
+      <DependentUpon>odunc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="odunc_tarih.resx">
+      <DependentUpon>odunc_tarih.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="odunc_ver.resx">
+      <DependentUpon>odunc_ver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sifremi_unuttum.resx">
+      <DependentUpon>sifremi_unuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sifre_degistir.resx">
+      <DependentUpon>sifre_degistir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uyeler.resx">
+      <DependentUpon>uyeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uye_duzenle.resx">
+      <DependentUpon>uye_duzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uye_ekle.resx">
+      <DependentUpon>uye_ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yayine_duzenle.resx">
+      <DependentUpon>yayine_duzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yayine_ekle.resx">
+      <DependentUpon>yayine_ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yayin_e.resx">
+      <DependentUpon>yayin_e.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yazarlar.resx">
+      <DependentUpon>yazarlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yazar_duzenle.resx">
+      <DependentUpon>yazar_duzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yazar_ekle.resx">
+      <DependentUpon>yazar_ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Kütüphane_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resimyok.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Locked-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lead-books.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\library_pataskala_026.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
