@@ -42,3 +42,7 @@ The library tracking system I made during my university years.
 
 #### Settings
 ![](screenshots/settings.png)
+
+## License
+
+This project is under the MIT license.
