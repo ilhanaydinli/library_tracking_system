@@ -13,32 +13,32 @@ The library tracking system I made during my university years.
 
 ## Screenshots
 
-##### Login
+#####Login
 ![](screenshots/login.png)
 
-##### Main Panel
+#### Main Panel
 ![](screenshots/main_panel.png)
 
-##### Lends
+#### Lends
 ![](screenshots/lends.png)
 
-##### Fines
+#### Fines
 ![](screenshots/fines.png)
 
-##### Members
+#### Members
 ![](screenshots/members.png)
 
-##### Books
+#### Books
 ![](screenshots/books.png)
 
-##### Publishing Houses
+#### Publishing Houses
 ![](screenshots/publishing_houses.png)
 
-##### Authors
+#### Authors
 ![](screenshots/authors.png)
 
-##### Categories
+#### Categories
 ![](screenshots/categories.png)
 
-##### Settings
+#### Settings
 ![](screenshots/settings.png)
